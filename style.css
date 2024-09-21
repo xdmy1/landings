@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     color: #1c1d1c;
-    background-image: url(assets/about-us-bg.png);
+    background-image: url(assets/body-bg.jpg);
     transition: .8s all;
 }
 :root {
@@ -28,7 +28,7 @@ li {
     list-style-type: none;
 }
 nav {
-    padding: 0 3rem;
+    padding: 0 5rem;
     position: absolute;
     left: 0;
     right: 0;
@@ -91,7 +91,7 @@ nav {
 .hero {
     display: flex;
     padding-top: 10%;
-    height: 100vh;
+    height: 97vh;
     max-height: 100%;
     /* background: url(assets/section.png); */
     background-repeat: no-repeat;
@@ -99,6 +99,7 @@ nav {
     align-items: center;
     padding: 0 4rem;
     flex-wrap: wrap;
+
 }
 .text {
         display: flex;
@@ -140,9 +141,13 @@ nav {
     display: flex; 
     text-align: center; 
     justify-content: center; 
+    align-items: center;
     padding-left: 2rem;
     gap: 1rem; 
     padding-top: 1rem;
+   }
+   .sageata-joss {
+    width: 28px;
    }
    .mai-mult {
     display: flex;
@@ -157,7 +162,7 @@ nav {
     background-color: var(--primary-color);
     gap: 1rem;
     /*border-radius: 30% 1% 30% 1%; */
-    border-radius: 10px 100px / 120px;
+    border-radius: 10px;
    }
    .mai-mult:hover {
     cursor:pointer;
@@ -169,7 +174,7 @@ nav {
    }
 
     .hero-image {
-        width: 35rem;
+        width: 38rem;
     }
 
     @media screen and (min-width: 1900px) and (max-width: 2000px) {
@@ -186,7 +191,7 @@ nav {
             font-size: 1.5rem;
         }
         .hero-image {
-            width: 30rem;
+            width: 35rem;
         }
         
         .text h3 {
@@ -227,7 +232,7 @@ nav {
             padding-top: 25%;
         }
         .hero-image {
-            width: 20rem;
+            width: 27rem;
         }
     }
 
@@ -269,9 +274,10 @@ nav {
         color: white;
         background-color: #1c1d1c;
         background-image: url(/assets/section.png);
-        border-radius: 10px 100px / 120px;
+        border-radius: 70px;
         margin: auto;
     }
+
     .about-us-text {
         display: flex;
         flex-direction: column;
@@ -316,5 +322,112 @@ nav {
             text-align: center;
             display: flex;
             align-items: center;
+        }
+    }
+
+    /* Portofoliu */
+
+    .portofolio {
+        padding: 9rem 0;
+        display: flex;
+        flex-direction: column;
+        color:  white;
+        align-items: center;
+        justify-content: center;
+        
+        gap: 1rem;
+
+    }
+    .portofolio-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        background-color: var(--primary-color);
+        padding: 3rem;
+        border-radius: 10px;
+        background-image: url(assets/section.png);
+    }
+    .portofolio-container {
+        display: flex;
+        gap: 3rem;
+        justify-content: space-around;
+        width: 62%;
+        flex-wrap: wrap ;
+        
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        width: 47%;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    .insta-container {
+        display: flex;
+        border-radius: 20px;
+        width: 100%;
+        padding: 1.5rem 1rem;
+        background-color: var(--primary-color);
+        align-items: center;
+        justify-content: center;
+        background-image: url(assets/section.png);
+    }
+    .image-portofolio {
+        width: 99%;
+        border-radius: 10px;
+    }
+    .website-in-portofolio {
+        background-image: url(assets/section.png);
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #1c1d1c;
+        border-radius: 10px;
+        align-items: center;
+        padding: 1rem; 
+    }
+
+    @media screen and (max-width: 1300px){
+        .portofolio-text {
+            width: 90%;
+            border-radius: 2rem;
+        }
+        .portofolio-container {
+            width: 95%;
+        }
+    }
+    .text-img  {
+        display: flex;
+        gap: 1rem;
+
+        padding-top: 1rem;
+        justify-content: center;
+    }
+    .go-to-img {
+        width: 25px;  
+    }
+    .go-to-img:hover {
+        background-color: white;
+        border-radius: 50%;
+        transition: 300ms all;
+    }
+
+    @media screen and (max-width: 860px) {
+        .portofolio-text {
+            width: 75%;
+            border-radius: 2rem;
+        }
+        .column {
+            width: 80%;
+        }
+        .portofolio-container {
+            width: 100%;
+            gap: 1rem;
+        }
+        .insta-container {
+            width: 100%;
         }
     }
