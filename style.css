@@ -422,12 +422,19 @@ nav {
         }
         .column {
             width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .portofolio-container {
             width: 100%;
             gap: 1rem;
         }
         .insta-container {
-            width: 100%;
+            width: 80%;
+        }
+
+        .website-in-portofolio {
+            width: 80%;
         }
     }
